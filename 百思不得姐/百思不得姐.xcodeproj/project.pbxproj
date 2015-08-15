@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F0822F0F1B7F60070090BC97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F0E1B7F60070090BC97 /* main.m */; };
-		F0822F121B7F60070090BC97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F111B7F60070090BC97 /* AppDelegate.m */; };
-		F0822F151B7F60070090BC97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F141B7F60070090BC97 /* ViewController.m */; };
-		F0822F181B7F60070090BC97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0822F161B7F60070090BC97 /* Main.storyboard */; };
 		F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0822F191B7F60070090BC97 /* Images.xcassets */; };
-		F0822F1D1B7F60070090BC97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0822F1B1B7F60070090BC97 /* LaunchScreen.xib */; };
 		F0822F291B7F60070090BC97 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F281B7F60070090BC97 /* _____Tests.m */; };
+		F0822F841B7F66170090BC97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F811B7F66170090BC97 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +27,12 @@
 		F0822F091B7F60070090BC97 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0822F0D1B7F60070090BC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0822F0E1B7F60070090BC97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F0822F101B7F60070090BC97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F0822F111B7F60070090BC97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0822F131B7F60070090BC97 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0822F141B7F60070090BC97 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F0822F171B7F60070090BC97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0822F191B7F60070090BC97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F0822F1C1B7F60070090BC97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F0822F221B7F60070090BC97 /* 百思不得姐Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0822F271B7F60070090BC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0822F281B7F60070090BC97 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		F0822F801B7F66170090BC97 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0822F811B7F66170090BC97 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +74,8 @@
 		F0822F0B1B7F60070090BC97 /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				F0822F101B7F60070090BC97 /* AppDelegate.h */,
-				F0822F111B7F60070090BC97 /* AppDelegate.m */,
-				F0822F131B7F60070090BC97 /* ViewController.h */,
-				F0822F141B7F60070090BC97 /* ViewController.m */,
-				F0822F161B7F60070090BC97 /* Main.storyboard */,
+				F0822F6E1B7F66170090BC97 /* Classes */,
 				F0822F191B7F60070090BC97 /* Images.xcassets */,
-				F0822F1B1B7F60070090BC97 /* LaunchScreen.xib */,
 				F0822F0C1B7F60070090BC97 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -117,6 +105,167 @@
 				F0822F271B7F60070090BC97 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0822F6E1B7F66170090BC97 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F0822F6F1B7F66170090BC97 /* Essence-精华 */,
+				F0822F731B7F66170090BC97 /* FriendTrends-关注 */,
+				F0822F771B7F66170090BC97 /* Me-我 */,
+				F0822F7B1B7F66170090BC97 /* New-新帖 */,
+				F0822F7F1B7F66170090BC97 /* Other-其他 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F0822F6F1B7F66170090BC97 /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				F0822F701B7F66170090BC97 /* Controller */,
+				F0822F711B7F66170090BC97 /* Model */,
+				F0822F721B7F66170090BC97 /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		F0822F701B7F66170090BC97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0822F711B7F66170090BC97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0822F721B7F66170090BC97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0822F731B7F66170090BC97 /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				F0822F741B7F66170090BC97 /* Controller */,
+				F0822F751B7F66170090BC97 /* Model */,
+				F0822F761B7F66170090BC97 /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		F0822F741B7F66170090BC97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0822F751B7F66170090BC97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0822F761B7F66170090BC97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0822F771B7F66170090BC97 /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				F0822F781B7F66170090BC97 /* Controller */,
+				F0822F791B7F66170090BC97 /* Model */,
+				F0822F7A1B7F66170090BC97 /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		F0822F781B7F66170090BC97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0822F791B7F66170090BC97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0822F7A1B7F66170090BC97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0822F7B1B7F66170090BC97 /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				F0822F7C1B7F66170090BC97 /* Controller */,
+				F0822F7D1B7F66170090BC97 /* Model */,
+				F0822F7E1B7F66170090BC97 /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		F0822F7C1B7F66170090BC97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0822F7D1B7F66170090BC97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0822F7E1B7F66170090BC97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0822F7F1B7F66170090BC97 /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				F0822F801B7F66170090BC97 /* AppDelegate.h */,
+				F0822F811B7F66170090BC97 /* AppDelegate.m */,
+				F0822F821B7F66170090BC97 /* Controller */,
+				F0822F831B7F66170090BC97 /* Model */,
+			);
+			path = "Other-其他";
+			sourceTree = "<group>";
+		};
+		F0822F821B7F66170090BC97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0822F831B7F66170090BC97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +348,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0822F181B7F60070090BC97 /* Main.storyboard in Resources */,
-				F0822F1D1B7F60070090BC97 /* LaunchScreen.xib in Resources */,
 				F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0822F151B7F60070090BC97 /* ViewController.m in Sources */,
-				F0822F121B7F60070090BC97 /* AppDelegate.m in Sources */,
+				F0822F841B7F66170090BC97 /* AppDelegate.m in Sources */,
 				F0822F0F1B7F60070090BC97 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +388,6 @@
 			targetProxy = F0822F231B7F60070090BC97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F0822F161B7F60070090BC97 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0822F171B7F60070090BC97 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F0822F1B1B7F60070090BC97 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0822F1C1B7F60070090BC97 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F0822F2A1B7F60070090BC97 /* Debug */ = {
@@ -347,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
