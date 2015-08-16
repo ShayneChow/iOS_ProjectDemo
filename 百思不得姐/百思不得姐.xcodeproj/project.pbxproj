@@ -11,6 +11,12 @@
 		F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0822F191B7F60070090BC97 /* Images.xcassets */; };
 		F0822F291B7F60070090BC97 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F281B7F60070090BC97 /* _____Tests.m */; };
 		F0822F841B7F66170090BC97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F811B7F66170090BC97 /* AppDelegate.m */; };
+		F0822F871B7F66DB0090BC97 /* ZXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F861B7F66DB0090BC97 /* ZXTabBarController.m */; };
+		F0822F8A1B8094A10090BC97 /* ZXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F891B8094A10090BC97 /* ZXNavigationController.m */; };
+		F0822F8D1B8094E30090BC97 /* ZXEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F8C1B8094E30090BC97 /* ZXEssenceViewController.m */; };
+		F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8A41B80AC5700F3A7A8 /* ZXNewViewController.m */; };
+		F09AA8A81B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8A71B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m */; };
+		F09AA8AB1B80AE7300F3A7A8 /* ZXMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8AA1B80AE7300F3A7A8 /* ZXMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,18 @@
 		F0822F281B7F60070090BC97 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
 		F0822F801B7F66170090BC97 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0822F811B7F66170090BC97 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0822F851B7F66DB0090BC97 /* ZXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTabBarController.h; sourceTree = "<group>"; };
+		F0822F861B7F66DB0090BC97 /* ZXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTabBarController.m; sourceTree = "<group>"; };
+		F0822F881B8094A10090BC97 /* ZXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNavigationController.h; sourceTree = "<group>"; };
+		F0822F891B8094A10090BC97 /* ZXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNavigationController.m; sourceTree = "<group>"; };
+		F0822F8B1B8094E30090BC97 /* ZXEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXEssenceViewController.h; sourceTree = "<group>"; };
+		F0822F8C1B8094E30090BC97 /* ZXEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXEssenceViewController.m; sourceTree = "<group>"; };
+		F09AA8A31B80AC5700F3A7A8 /* ZXNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNewViewController.h; sourceTree = "<group>"; };
+		F09AA8A41B80AC5700F3A7A8 /* ZXNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNewViewController.m; sourceTree = "<group>"; };
+		F09AA8A61B80AE5700F3A7A8 /* ZXFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFriendTrendsViewController.h; sourceTree = "<group>"; };
+		F09AA8A71B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXFriendTrendsViewController.m; sourceTree = "<group>"; };
+		F09AA8A91B80AE7300F3A7A8 /* ZXMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMeViewController.h; sourceTree = "<group>"; };
+		F09AA8AA1B80AE7300F3A7A8 /* ZXMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				F0822F6F1B7F66170090BC97 /* Essence-精华 */,
+				F0822F7B1B7F66170090BC97 /* New-新帖 */,
 				F0822F731B7F66170090BC97 /* FriendTrends-关注 */,
 				F0822F771B7F66170090BC97 /* Me-我 */,
-				F0822F7B1B7F66170090BC97 /* New-新帖 */,
 				F0822F7F1B7F66170090BC97 /* Other-其他 */,
 			);
 			path = Classes;
@@ -132,6 +150,8 @@
 		F0822F701B7F66170090BC97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F0822F8B1B8094E30090BC97 /* ZXEssenceViewController.h */,
+				F0822F8C1B8094E30090BC97 /* ZXEssenceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +183,8 @@
 		F0822F741B7F66170090BC97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F09AA8A61B80AE5700F3A7A8 /* ZXFriendTrendsViewController.h */,
+				F09AA8A71B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +216,8 @@
 		F0822F781B7F66170090BC97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F09AA8A91B80AE7300F3A7A8 /* ZXMeViewController.h */,
+				F09AA8AA1B80AE7300F3A7A8 /* ZXMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +249,8 @@
 		F0822F7C1B7F66170090BC97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F09AA8A31B80AC5700F3A7A8 /* ZXNewViewController.h */,
+				F09AA8A41B80AC5700F3A7A8 /* ZXNewViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,6 +283,10 @@
 		F0822F821B7F66170090BC97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F0822F851B7F66DB0090BC97 /* ZXTabBarController.h */,
+				F0822F861B7F66DB0090BC97 /* ZXTabBarController.m */,
+				F0822F881B8094A10090BC97 /* ZXNavigationController.h */,
+				F0822F891B8094A10090BC97 /* ZXNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +342,7 @@
 		F0822F011B7F60070090BC97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZX;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "周想";
 				TargetAttributes = {
@@ -366,6 +397,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0822F8D1B8094E30090BC97 /* ZXEssenceViewController.m in Sources */,
+				F0822F871B7F66DB0090BC97 /* ZXTabBarController.m in Sources */,
+				F09AA8AB1B80AE7300F3A7A8 /* ZXMeViewController.m in Sources */,
+				F0822F8A1B8094A10090BC97 /* ZXNavigationController.m in Sources */,
+				F09AA8A81B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m in Sources */,
+				F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */,
 				F0822F841B7F66170090BC97 /* AppDelegate.m in Sources */,
 				F0822F0F1B7F60070090BC97 /* main.m in Sources */,
 			);
@@ -545,6 +582,7 @@
 				F0822F2E1B7F60070090BC97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0822F2F1B7F60070090BC97 /* Build configuration list for PBXNativeTarget "百思不得姐Tests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +591,7 @@
 				F0822F311B7F60070090BC97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

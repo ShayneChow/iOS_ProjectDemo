@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZXTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,9 @@
     
     // 2.设置window大小
     self.window.frame = [UIScreen mainScreen].bounds;
+    
+    // 设置窗口根控制器
+    self.window.rootViewController = [[ZXTabBarController alloc] init];
     
     // 3.显示window
     [self.window makeKeyAndVisible];
