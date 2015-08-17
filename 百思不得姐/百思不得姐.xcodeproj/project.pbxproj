@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0144AD31B8222D200CBDD84 /* ZXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144AD21B8222D200CBDD84 /* ZXTabBar.m */; };
+		F0144AD91B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144AD61B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m */; };
+		F0144ADA1B82295D00CBDD84 /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144AD81B82295D00CBDD84 /* UIView+XMGExtension.m */; };
 		F0822F0F1B7F60070090BC97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F0E1B7F60070090BC97 /* main.m */; };
 		F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0822F191B7F60070090BC97 /* Images.xcassets */; };
 		F0822F291B7F60070090BC97 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F281B7F60070090BC97 /* _____Tests.m */; };
@@ -30,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F0144AD11B8222D200CBDD84 /* ZXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTabBar.h; sourceTree = "<group>"; };
+		F0144AD21B8222D200CBDD84 /* ZXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTabBar.m; sourceTree = "<group>"; };
+		F0144AD51B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
+		F0144AD61B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtension.m"; sourceTree = "<group>"; };
+		F0144AD71B82295D00CBDD84 /* UIView+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMGExtension.h"; sourceTree = "<group>"; };
+		F0144AD81B82295D00CBDD84 /* UIView+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMGExtension.m"; sourceTree = "<group>"; };
 		F0822F091B7F60070090BC97 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0822F0D1B7F60070090BC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0822F0E1B7F60070090BC97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +80,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0144AD01B8222A000CBDD84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0144AD11B8222D200CBDD84 /* ZXTabBar.h */,
+				F0144AD21B8222D200CBDD84 /* ZXTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0144AD41B82295D00CBDD84 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F0144AD51B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.h */,
+				F0144AD61B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m */,
+				F0144AD71B82295D00CBDD84 /* UIView+XMGExtension.h */,
+				F0144AD81B82295D00CBDD84 /* UIView+XMGExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		F0822F001B7F60070090BC97 = {
 			isa = PBXGroup;
 			children = (
@@ -274,8 +303,10 @@
 			children = (
 				F0822F801B7F66170090BC97 /* AppDelegate.h */,
 				F0822F811B7F66170090BC97 /* AppDelegate.m */,
+				F0144AD41B82295D00CBDD84 /* Category */,
 				F0822F821B7F66170090BC97 /* Controller */,
 				F0822F831B7F66170090BC97 /* Model */,
+				F0144AD01B8222A000CBDD84 /* View */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -399,10 +430,13 @@
 			files = (
 				F0822F8D1B8094E30090BC97 /* ZXEssenceViewController.m in Sources */,
 				F0822F871B7F66DB0090BC97 /* ZXTabBarController.m in Sources */,
+				F0144AD31B8222D200CBDD84 /* ZXTabBar.m in Sources */,
 				F09AA8AB1B80AE7300F3A7A8 /* ZXMeViewController.m in Sources */,
 				F0822F8A1B8094A10090BC97 /* ZXNavigationController.m in Sources */,
 				F09AA8A81B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m in Sources */,
 				F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */,
+				F0144AD91B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m in Sources */,
+				F0144ADA1B82295D00CBDD84 /* UIView+XMGExtension.m in Sources */,
 				F0822F841B7F66170090BC97 /* AppDelegate.m in Sources */,
 				F0822F0F1B7F60070090BC97 /* main.m in Sources */,
 			);

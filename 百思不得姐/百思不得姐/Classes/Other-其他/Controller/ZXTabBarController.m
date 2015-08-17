@@ -12,6 +12,7 @@
 #import "ZXNewViewController.h"
 #import "ZXFriendTrendsViewController.h"
 #import "ZXMeViewController.h"
+#import "ZXTabBar.h"
 
 @interface ZXTabBarController ()
 
@@ -24,11 +25,19 @@
     
     [self setupChildViewController];
     
-    [self setTabBArItemAttrs];
+    [self setTabBarItemAttrs];
+    
+    [self setTabBarItem];
 
 }
 
-- (void)setTabBArItemAttrs {
+#pragma mark - 设置tabbar
+- (void)setTabBarItem {
+    [self setValue:[[ZXTabBar alloc] init] forKeyPath:@"tabBar"];
+}
+
+#pragma mark - 设置tabbar属性
+- (void)setTabBarItemAttrs {
     // 通过appearance统一设置UITabBarItem的文字属性
     UITabBarItem *item = [UITabBarItem appearance];
     // 规律:后面带有UI_APPEARANCE_SELECTOR的方法,都可以通过appearance对象统一设置
@@ -44,39 +53,8 @@
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 }
 
+#pragma mark - 设置tabbar子控制器
 - (void)setupChildViewController {
-//    ZXEssenceViewController *essenceViewController = [[ZXEssenceViewController alloc] init];
-//    ZXNavigationController  *nav = [[ZXNavigationController alloc] initWithRootViewController:essenceViewController];
-//    [self addChildViewController:nav];
-//    
-//    essenceViewController.title = @"精华";
-//    essenceViewController.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
-//    essenceViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
-//    
-//    ZXNewViewController *newViewController = [[ZXNewViewController alloc] init];
-//    ZXNavigationController  *nav1 = [[ZXNavigationController alloc] initWithRootViewController:newViewController];
-//    [self addChildViewController:nav1];
-//    
-//    newViewController.title = @"新帖";
-//    newViewController.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-//    newViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_new_click_icon"];
-//    
-//    ZXFriendTrendsViewController *friendTrendsViewController = [[ZXFriendTrendsViewController alloc] init];
-//    ZXNavigationController  *nav2 = [[ZXNavigationController alloc] initWithRootViewController:friendTrendsViewController];
-//    [self addChildViewController:nav2];
-//    
-//    friendTrendsViewController.title = @"关注";
-//    friendTrendsViewController.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
-//    friendTrendsViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
-//    
-//    ZXMeViewController *meViewController = [[ZXMeViewController alloc] init];
-//    ZXNavigationController  *nav3 = [[ZXNavigationController alloc] initWithRootViewController:meViewController];
-//    [self addChildViewController:nav3];
-//    
-//    meViewController.title = @"关注";
-//    meViewController.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
-//    meViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
-    
     [self setupChildViewController:[[ZXEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     
     [self setupChildViewController:[[ZXNewViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
@@ -90,7 +68,7 @@
     ZXNavigationController  *nav = [[ZXNavigationController alloc] initWithRootViewController:viewController];
     [self addChildViewController:nav];
     
-    viewController.title = title;
+    viewController.title = title; // 此处设置等价于同时设置了tabBarItem.title和navigationItem.title
     viewController.tabBarItem.image = [UIImage imageNamed:image];
     viewController.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
 }
