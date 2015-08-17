@@ -18,6 +18,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithRed:0.400 green:0.800 blue:1.000 alpha:1.000];
+    // 设置导航栏中间的文字
+    self.navigationItem.title = @"我的关注";
 }
 
 @end
