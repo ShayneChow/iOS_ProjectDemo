@@ -10,6 +10,7 @@
 		F0144AD31B8222D200CBDD84 /* ZXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144AD21B8222D200CBDD84 /* ZXTabBar.m */; };
 		F0144AD91B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144AD61B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m */; };
 		F0144ADA1B82295D00CBDD84 /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144AD81B82295D00CBDD84 /* UIView+XMGExtension.m */; };
+		F0144ADE1B83365A00CBDD84 /* ZXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144ADD1B83365A00CBDD84 /* ZXSettingViewController.m */; };
 		F0822F0F1B7F60070090BC97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F0E1B7F60070090BC97 /* main.m */; };
 		F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0822F191B7F60070090BC97 /* Images.xcassets */; };
 		F0822F291B7F60070090BC97 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F281B7F60070090BC97 /* _____Tests.m */; };
@@ -40,6 +41,8 @@
 		F0144AD71B82295D00CBDD84 /* UIView+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMGExtension.h"; sourceTree = "<group>"; };
 		F0144AD81B82295D00CBDD84 /* UIView+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMGExtension.m"; sourceTree = "<group>"; };
 		F0144ADB1B831DA100CBDD84 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F0144ADC1B83365A00CBDD84 /* ZXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSettingViewController.h; sourceTree = "<group>"; };
+		F0144ADD1B83365A00CBDD84 /* ZXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSettingViewController.m; sourceTree = "<group>"; };
 		F0822F091B7F60070090BC97 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0822F0D1B7F60070090BC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0822F0E1B7F60070090BC97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -248,6 +251,8 @@
 			children = (
 				F09AA8A91B80AE7300F3A7A8 /* ZXMeViewController.h */,
 				F09AA8AA1B80AE7300F3A7A8 /* ZXMeViewController.m */,
+				F0144ADC1B83365A00CBDD84 /* ZXSettingViewController.h */,
+				F0144ADD1B83365A00CBDD84 /* ZXSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -433,6 +438,7 @@
 				F0822F8D1B8094E30090BC97 /* ZXEssenceViewController.m in Sources */,
 				F0822F871B7F66DB0090BC97 /* ZXTabBarController.m in Sources */,
 				F0144AD31B8222D200CBDD84 /* ZXTabBar.m in Sources */,
+				F0144ADE1B83365A00CBDD84 /* ZXSettingViewController.m in Sources */,
 				F09AA8AB1B80AE7300F3A7A8 /* ZXMeViewController.m in Sources */,
 				F0822F8A1B8094A10090BC97 /* ZXNavigationController.m in Sources */,
 				F09AA8A81B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m in Sources */,

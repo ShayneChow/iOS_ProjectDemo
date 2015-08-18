@@ -34,7 +34,7 @@
 
 - (void)publishClick {
     // 发布按钮点击响应方法
-    NSLog(@"发布新消息，弹出消息发布视图");
+    ZXLog(@"发布新消息，弹出消息发布视图");
 }
 
 #pragma mark - layoutSubviews

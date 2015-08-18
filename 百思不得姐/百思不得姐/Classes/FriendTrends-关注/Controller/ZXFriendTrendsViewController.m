@@ -17,9 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor colorWithRed:0.400 green:0.800 blue:1.000 alpha:1.000];
+    self.view.backgroundColor = ZXGlobalBg;
     // 设置导航栏中间的文字
     self.navigationItem.title = @"我的关注";
+    // 设置导航栏左边的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(friendsRecommentClick) image:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click"];
+}
+
+- (void)friendsRecommentClick {
+    ZXLogFunc;
 }
 
 @end

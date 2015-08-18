@@ -17,7 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor colorWithRed:1.000 green:0.502 blue:0.000 alpha:1.000];
+    self.view.backgroundColor = ZXGlobalBg;
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    // 设置导航栏左边的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(tagSubClick) image:@"MainTagSubIcon" highImage:@"MainTagSubIconClick"];
+}
+
+- (void)tagSubClick {
+    ZXLogFunc;
 }
 
 @end
