@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by Xiang on 15/8/18.
+//  Copyright (c) 2015年 周想. All rights reserved.
+//
+
+#ifndef _________PrefixHeader_pch
+#define _________PrefixHeader_pch
+
+#ifdef DEBUG // 开发
+#define ZXLog(...) NSLog(__VA_ARGS__)
+#else // 发布
+#define ZXLog(...)
+#endif
+
+#define ZXLogFunc ZXLog(@"%s", __func__)
+
+#define ZXColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define ZXGlobalBg ZXColor(215, 215, 215)
+
+#import "UIBarButtonItem+XMGExtension.h"
+#import "UIView+XMGExtension.h"
+
+#endif

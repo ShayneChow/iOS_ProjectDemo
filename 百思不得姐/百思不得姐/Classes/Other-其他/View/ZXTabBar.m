@@ -7,7 +7,6 @@
 //
 
 #import "ZXTabBar.h"
-#import "UIView+XMGExtension.h"
 
 @interface ZXTabBar()
 
