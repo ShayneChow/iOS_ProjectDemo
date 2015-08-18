@@ -35,6 +35,7 @@
 
 - (void)publishClick {
     // 发布按钮点击响应方法
+    NSLog(@"发布新消息，弹出消息发布视图");
 }
 
 #pragma mark - layoutSubviews
@@ -44,6 +45,19 @@
     // 发布按钮
     self.publishButton.centerX = self.width * 0.5;
     self.publishButton.centerY = self.height * 0.5;
+    
+    // 处理其他按钮
+    CGFloat buttonW = self.width / 5;
+    CGFloat i = 0;
+    for (UIView *tabBarButton in self.subviews) {
+        if (![NSStringFromClass(tabBarButton.class) isEqualToString:@"UITabBarButton"]) continue;
+        
+        tabBarButton.width = buttonW;
+        tabBarButton.x = i * buttonW;
+        if (i > 1) tabBarButton.x += buttonW;
+        
+        i++;
+    }
 }
 
 @end
