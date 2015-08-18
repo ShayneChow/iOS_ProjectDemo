@@ -7,6 +7,7 @@
 //
 
 #import "ZXFriendTrendsViewController.h"
+#import "ZXLoginRegisterViewController.h"
 
 @interface ZXFriendTrendsViewController ()
 
@@ -26,6 +27,12 @@
 
 - (void)friendsRecommentClick {
     ZXLogFunc;
+}
+
+// 跳转到登录/注册界面
+- (IBAction)loginRegister {
+    ZXLoginRegisterViewController *loginRegister = [[ZXLoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegister animated:YES completion:nil];
 }
 
 @end

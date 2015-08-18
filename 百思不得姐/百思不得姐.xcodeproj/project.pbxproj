@@ -60,6 +60,9 @@
 		F0822F871B7F66DB0090BC97 /* ZXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F861B7F66DB0090BC97 /* ZXTabBarController.m */; };
 		F0822F8A1B8094A10090BC97 /* ZXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F891B8094A10090BC97 /* ZXNavigationController.m */; };
 		F0822F8D1B8094E30090BC97 /* ZXEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F8C1B8094E30090BC97 /* ZXEssenceViewController.m */; };
+		F0848B8F1B8391F600391395 /* ZXFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0848B8E1B8391F600391395 /* ZXFriendTrendsViewController.xib */; };
+		F0848B931B8393B100391395 /* ZXLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0848B911B8393B100391395 /* ZXLoginRegisterViewController.m */; };
+		F0848B941B8393B100391395 /* ZXLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0848B921B8393B100391395 /* ZXLoginRegisterViewController.xib */; };
 		F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8A41B80AC5700F3A7A8 /* ZXNewViewController.m */; };
 		F09AA8A81B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8A71B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m */; };
 		F09AA8AB1B80AE7300F3A7A8 /* ZXMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8AA1B80AE7300F3A7A8 /* ZXMeViewController.m */; };
@@ -186,6 +189,10 @@
 		F0822F891B8094A10090BC97 /* ZXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNavigationController.m; sourceTree = "<group>"; };
 		F0822F8B1B8094E30090BC97 /* ZXEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXEssenceViewController.h; sourceTree = "<group>"; };
 		F0822F8C1B8094E30090BC97 /* ZXEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXEssenceViewController.m; sourceTree = "<group>"; };
+		F0848B8E1B8391F600391395 /* ZXFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		F0848B901B8393B100391395 /* ZXLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLoginRegisterViewController.h; sourceTree = "<group>"; };
+		F0848B911B8393B100391395 /* ZXLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLoginRegisterViewController.m; sourceTree = "<group>"; };
+		F0848B921B8393B100391395 /* ZXLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		F09AA8A31B80AC5700F3A7A8 /* ZXNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNewViewController.h; sourceTree = "<group>"; };
 		F09AA8A41B80AC5700F3A7A8 /* ZXNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNewViewController.m; sourceTree = "<group>"; };
 		F09AA8A61B80AE5700F3A7A8 /* ZXFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -473,6 +480,10 @@
 			children = (
 				F09AA8A61B80AE5700F3A7A8 /* ZXFriendTrendsViewController.h */,
 				F09AA8A71B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m */,
+				F0848B8E1B8391F600391395 /* ZXFriendTrendsViewController.xib */,
+				F0848B901B8393B100391395 /* ZXLoginRegisterViewController.h */,
+				F0848B911B8393B100391395 /* ZXLoginRegisterViewController.m */,
+				F0848B921B8393B100391395 /* ZXLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -672,6 +683,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0848B941B8393B100391395 /* ZXLoginRegisterViewController.xib in Resources */,
+				F0848B8F1B8391F600391395 /* ZXFriendTrendsViewController.xib in Resources */,
 				F002E08B1B837D2900633248 /* ZXTagCell.xib in Resources */,
 				F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */,
 				F002E01C1B83786D00633248 /* SVProgressHUD.bundle in Resources */,
@@ -726,6 +739,7 @@
 				F002E0681B8378DF00633248 /* UIImage+MultiFormat.m in Sources */,
 				F002E0631B8378DF00633248 /* SDWebImageDownloaderOperation.m in Sources */,
 				F002E0911B83852300633248 /* UIImageView+XMGExtension.m in Sources */,
+				F0848B931B8393B100391395 /* ZXLoginRegisterViewController.m in Sources */,
 				F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */,
 				F002E0851B83790400633248 /* NSObject+MJProperty.m in Sources */,
 				F002E0801B83790400633248 /* MJFoundation.m in Sources */,
