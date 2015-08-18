@@ -7,6 +7,7 @@
 //
 
 #import "ZXEssenceViewController.h"
+#import "ZXTagViewController.h"
 
 @interface ZXEssenceViewController ()
 
@@ -23,14 +24,10 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(tagSubClick) image:@"MainTagSubIcon" highImage:@"MainTagSubIconClick"];
 }
 
+// 跳转到“推荐标签”界面
 - (void)tagSubClick {
-    ZXLogFunc;
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor redColor];
-    [self.navigationController pushViewController:vc animated:YES];
+    ZXTagViewController *tagViewController = [[ZXTagViewController alloc] init];
+    [self.navigationController pushViewController:tagViewController animated:YES];
 }
 
 @end

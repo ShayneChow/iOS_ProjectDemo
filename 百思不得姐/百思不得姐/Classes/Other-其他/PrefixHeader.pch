@@ -23,5 +23,7 @@
 
 #import "UIBarButtonItem+XMGExtension.h"
 #import "UIView+XMGExtension.h"
+#import "UIImage+XMGExtension.h"
+#import "UIImageView+XMGExtension.h"
 
 #endif

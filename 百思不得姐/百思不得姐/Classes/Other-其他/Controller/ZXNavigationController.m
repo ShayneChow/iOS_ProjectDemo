@@ -8,7 +8,7 @@
 
 #import "ZXNavigationController.h"
 
-@interface ZXNavigationController ()
+@interface ZXNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -28,7 +28,8 @@
     [super viewDidLoad];
     
     // 清空手势代理, 然后就会重新出现手势移除控制器的功能
-    self.interactivePopGestureRecognizer.delegate = nil;
+//    self.interactivePopGestureRecognizer.delegate = nil; // 在根控制器滑动会进入假死状态，需要将代理设为self
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 /**
@@ -60,6 +61,12 @@
 
 - (void)back {
     [self popViewControllerAnimated:YES];
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+//    return YES;
+    return self.childViewControllers.count > 1; // 子控制器个数大于1的时候设置代理，即可以触发右滑返回操作
 }
 
 @end
