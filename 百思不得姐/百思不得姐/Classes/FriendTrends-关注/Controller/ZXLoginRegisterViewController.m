@@ -10,6 +10,9 @@
 
 @interface ZXLoginRegisterViewController ()
 
+/** 登录框左边距 */
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftMargin;
+
 @end
 
 @implementation ZXLoginRegisterViewController
@@ -19,9 +22,42 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/**
+ *  注册/登录切换
+ */
+- (IBAction)showLoginOrRegister:(UIButton *)button {
+    [self.view endEditing:YES];
+    
+    if (self.leftMargin.constant) {
+        self.leftMargin.constant = 0;
+        button.selected = NO;
+    } else {
+        self.leftMargin.constant =  - self.view.width;
+        button.selected = YES;
+    }
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        [self.view layoutIfNeeded];
+    }];
+}
+
+/**
+ *  状态栏的样式
+ */
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    // 白色状态栏
+    return UIStatusBarStyleLightContent;
+}
+
+/**
+ *  点击界面收起键盘
+ */
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
+
+- (IBAction)goBack {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
