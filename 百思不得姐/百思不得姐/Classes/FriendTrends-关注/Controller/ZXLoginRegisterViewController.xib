@@ -88,7 +88,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uve-vy-6Ik" userLabel="按钮">
                             <rect key="frame" x="0.0" y="30" width="600" height="100"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkX-sB-BaY">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkX-sB-BaY" customClass="ZXLoginRegisterButton">
                                     <rect key="frame" x="200" y="0.0" width="200" height="100"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <state key="normal" title="微博登录" image="login_sina_icon">
@@ -96,7 +96,7 @@
                                     </state>
                                     <state key="highlighted" image="login_sina_icon_click"/>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3O-eC-1dX">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3O-eC-1dX" customClass="ZXLoginRegisterButton">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <state key="normal" title="QQ登录" image="login_QQ_icon">
@@ -104,7 +104,7 @@
                                     </state>
                                     <state key="highlighted" image="login_QQ_icon_click"/>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hv-Sp-M3h">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hv-Sp-M3h" customClass="ZXLoginRegisterButton">
                                     <rect key="frame" x="400" y="0.0" width="200" height="100"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <state key="normal" title="腾讯微博" image="login_tecent_icon">
