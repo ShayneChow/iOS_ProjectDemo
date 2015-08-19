@@ -8,7 +8,7 @@
 
 #import "ZXTagCell.h"
 #import "ZXTag.h"
-#import "UIImageView+WebCache.h"
+#import <UIImageView+WebCache.h>
 
 @interface ZXTagCell()
 

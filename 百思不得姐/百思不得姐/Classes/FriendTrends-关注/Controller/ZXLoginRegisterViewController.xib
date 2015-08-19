@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZXLoginRegisterViewController">
             <connections>
-                <outlet property="leftMargin" destination="y9R-Ee-fkr" id="PMx-w3-dKb"/>
+                <outlet property="leftMargin" destination="2Ic-eT-nEX" id="trI-gD-LYh"/>
                 <outlet property="view" destination="FY7-jc-0SP" id="K3u-G6-dJU"/>
             </connections>
         </placeholder>
