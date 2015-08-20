@@ -62,6 +62,8 @@ static NSString * const ZXTagId = @"tag";
     params[@"c"] = @"topic";
     
     // 发送请求（使用AFN）
+    //__weak typeof(self) weakSelf = self;
+    ZXWeakSelf;
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         // 关闭弹框
         [SVProgressHUD dismiss];
@@ -69,7 +71,7 @@ static NSString * const ZXTagId = @"tag";
         // 解析数据
         // responseObject[字典数组，里面存放的是NSDictionary对象]
         // self.tags[模型数组，里面存放的是XMGTag对象]
-        self.tags = [ZXTag objectArrayWithKeyValuesArray:responseObject];
+        weakSelf.tags = [ZXTag objectArrayWithKeyValuesArray:responseObject];
         
         // 刷新表格
         [self.tableView reloadData];

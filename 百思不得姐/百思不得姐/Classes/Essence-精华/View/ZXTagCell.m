@@ -52,7 +52,9 @@
         self.subNumberLabel.text = [NSString stringWithFormat:@"%.1f万人订阅", tagModel.sub_number / 10000.0];
     }
     // 设置头像
-    [self.imageListView setHeader:tagModel.image_list];
+//    [self.imageListView sd_setImageWithURL:[NSURL URLWithString:tagModel.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.imageListView setHeader:tagModel.image_list]; // 将头像设置为圆形
+    
 }
 
 @end
