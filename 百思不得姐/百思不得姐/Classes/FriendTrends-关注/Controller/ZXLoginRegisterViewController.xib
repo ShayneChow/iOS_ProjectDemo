@@ -8,6 +8,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZXLoginRegisterViewController">
             <connections>
                 <outlet property="leftMargin" destination="2Ic-eT-nEX" id="trI-gD-LYh"/>
+                <outlet property="loginPasswordTextField" destination="hEA-Bc-PrT" id="Beq-3w-Bky"/>
+                <outlet property="loginPhoneTextField" destination="nzV-b5-qsD" id="mZr-QX-71f"/>
                 <outlet property="view" destination="FY7-jc-0SP" id="K3u-G6-dJU"/>
             </connections>
         </placeholder>
@@ -266,6 +268,9 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginToServer" destination="-1" eventType="touchUpInside" id="kav-Qg-uHg"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhi-mG-V3Z">
                             <rect key="frame" x="358" y="162" width="75" height="30"/>

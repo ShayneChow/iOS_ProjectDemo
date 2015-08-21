@@ -7,11 +7,18 @@
 //
 
 #import "ZXLoginRegisterViewController.h"
+#import "ZXLoginRegisterTextField.h"
+#import <AFNetworking.h>
 
 @interface ZXLoginRegisterViewController ()
 
 /** 登录框左边距 */
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftMargin;
+@property (weak, nonatomic) IBOutlet ZXLoginRegisterTextField *loginPhoneTextField;
+@property (weak, nonatomic) IBOutlet ZXLoginRegisterTextField *loginPasswordTextField;
+
+@property (nonatomic, strong) NSString *loginPhone;
+@property (nonatomic, strong) NSString *loginPassword;
 
 @end
 
@@ -58,6 +65,26 @@
 
 - (IBAction)goBack {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)loginToServer {
+    // 0.获取输入表单内容
+    _loginPhone = self.loginPhoneTextField.text;
+    _loginPassword = self.loginPasswordTextField.text;
+    
+    // 1.创建网络管理者
+    // AFHTTPSessionManager 基于NSURLSession
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    // 2.利用网络管理者发送post请求
+    NSDictionary *parameters = @{
+                                 @"username":_loginPhone,
+                                 @"pwd":_loginPassword
+                                 };
+    [manager POST:@"http://account.calvin.wifi.gift/api/v1/user/login" parameters:parameters success:^ void(NSURLSessionDataTask * task, id responseObject) {
+        NSLog(@"请求成功 %@", [responseObject class]);
+    } failure:^ void(NSURLSessionDataTask * operation, NSError * error) {
+        NSLog(@"请求失败 %@", error);
+    }];
 }
 
 @end
