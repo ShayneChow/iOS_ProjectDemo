@@ -74,7 +74,7 @@ static NSString * const ZXTagId = @"tag";
         weakSelf.tags = [ZXTag objectArrayWithKeyValuesArray:responseObject];
         
         // 刷新表格
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [SVProgressHUD showErrorWithStatus:@"加载标签信息失败"];
     }];
