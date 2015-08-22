@@ -27,5 +27,6 @@
 #import "UIView+XMGExtension.h"
 #import "UIImage+XMGExtension.h"
 #import "UIImageView+XMGExtension.h"
+#import "ZXConst.h"
 
 #endif

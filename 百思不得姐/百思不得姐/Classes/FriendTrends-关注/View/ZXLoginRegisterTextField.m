@@ -9,8 +9,6 @@
 #import "ZXLoginRegisterTextField.h"
 #import <objc/runtime.h>
 
-#define XMGPlaceholderColor @"placeholderLabel.textColor"
-
 @implementation ZXLoginRegisterTextField
 
 - (void)awakeFromNib {
@@ -28,7 +26,7 @@
  *  正在编辑
  */
 - (BOOL)becomeFirstResponder {
-    [self setValue:[UIColor whiteColor] forKeyPath:XMGPlaceholderColor];
+    [self setValue:[UIColor whiteColor] forKeyPath:ZXTextFieldPlaceholderColor];
     return [super becomeFirstResponder];
 }
 
@@ -36,7 +34,7 @@
  * 结束编辑
  */
 - (BOOL)resignFirstResponder {
-    [self setValue:[UIColor grayColor] forKeyPath:XMGPlaceholderColor];
+    [self setValue:[UIColor grayColor] forKeyPath:ZXTextFieldPlaceholderColor];
     return [super resignFirstResponder];
 }
 

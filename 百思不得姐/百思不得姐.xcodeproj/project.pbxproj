@@ -30,6 +30,7 @@
 		F0848B941B8393B100391395 /* ZXLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0848B921B8393B100391395 /* ZXLoginRegisterViewController.xib */; };
 		F0848B9A1B849D8000391395 /* ZXLoginRegisterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F0848B991B849D8000391395 /* ZXLoginRegisterButton.m */; };
 		F0848B9D1B84A41700391395 /* ZXLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F0848B9C1B84A41700391395 /* ZXLoginRegisterTextField.m */; };
+		F08EDF8D1B88949A0001CC94 /* ZXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F08EDF8C1B88949A0001CC94 /* ZXConst.m */; };
 		F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8A41B80AC5700F3A7A8 /* ZXNewViewController.m */; };
 		F09AA8A81B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8A71B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m */; };
 		F09AA8AB1B80AE7300F3A7A8 /* ZXMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09AA8AA1B80AE7300F3A7A8 /* ZXMeViewController.m */; };
@@ -92,6 +93,8 @@
 		F0848B991B849D8000391395 /* ZXLoginRegisterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLoginRegisterButton.m; sourceTree = "<group>"; };
 		F0848B9B1B84A41700391395 /* ZXLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLoginRegisterTextField.h; sourceTree = "<group>"; };
 		F0848B9C1B84A41700391395 /* ZXLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLoginRegisterTextField.m; sourceTree = "<group>"; };
+		F08EDF8B1B88949A0001CC94 /* ZXConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXConst.h; path = "百思不得姐/Classes/Other-其他/ZXConst.h"; sourceTree = SOURCE_ROOT; };
+		F08EDF8C1B88949A0001CC94 /* ZXConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXConst.m; path = "百思不得姐/Classes/Other-其他/ZXConst.m"; sourceTree = SOURCE_ROOT; };
 		F09AA8A31B80AC5700F3A7A8 /* ZXNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNewViewController.h; sourceTree = "<group>"; };
 		F09AA8A41B80AC5700F3A7A8 /* ZXNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNewViewController.m; sourceTree = "<group>"; };
 		F09AA8A61B80AE5700F3A7A8 /* ZXFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -383,6 +386,8 @@
 				F0822F801B7F66170090BC97 /* AppDelegate.h */,
 				F0822F811B7F66170090BC97 /* AppDelegate.m */,
 				F0144ADB1B831DA100CBDD84 /* PrefixHeader.pch */,
+				F08EDF8B1B88949A0001CC94 /* ZXConst.h */,
+				F08EDF8C1B88949A0001CC94 /* ZXConst.m */,
 				F0144AD41B82295D00CBDD84 /* Category */,
 				F0822F821B7F66170090BC97 /* Controller */,
 				F0822F831B7F66170090BC97 /* Model */,
@@ -561,6 +566,7 @@
 				F09AA8A81B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m in Sources */,
 				F002E0911B83852300633248 /* UIImageView+XMGExtension.m in Sources */,
 				F0848B931B8393B100391395 /* ZXLoginRegisterViewController.m in Sources */,
+				F08EDF8D1B88949A0001CC94 /* ZXConst.m in Sources */,
 				F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */,
 				F0144AD91B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				F0144ADA1B82295D00CBDD84 /* UIView+XMGExtension.m in Sources */,

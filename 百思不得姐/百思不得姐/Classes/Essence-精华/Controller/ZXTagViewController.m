@@ -64,7 +64,7 @@ static NSString * const ZXTagId = @"tag";
     // 发送请求（使用AFN）
     //__weak typeof(self) weakSelf = self;
     ZXWeakSelf;
-    [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self.manager GET:ZXBaseURL parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         // 关闭弹框
         [SVProgressHUD dismiss];
         
