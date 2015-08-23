@@ -19,6 +19,9 @@
 		F0144ADE1B83365A00CBDD84 /* ZXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144ADD1B83365A00CBDD84 /* ZXSettingViewController.m */; };
 		F0144AE11B8342AD00CBDD84 /* ZXTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0144AE01B8342AD00CBDD84 /* ZXTagViewController.m */; };
 		F05DC8C01B89EC5300CDDB9C /* ZXMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8BF1B89EC5300CDDB9C /* ZXMeCell.m */; };
+		F05DC8C31B8A29A300CDDB9C /* ZXFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C21B8A29A300CDDB9C /* ZXFooterView.m */; };
+		F05DC8C61B8A2E4500CDDB9C /* ZXSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C51B8A2E4500CDDB9C /* ZXSquare.m */; };
+		F05DC8C91B8A2FC500CDDB9C /* ZXSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */; };
 		F0822F0F1B7F60070090BC97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F0E1B7F60070090BC97 /* main.m */; };
 		F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0822F191B7F60070090BC97 /* Images.xcassets */; };
 		F0822F291B7F60070090BC97 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F281B7F60070090BC97 /* _____Tests.m */; };
@@ -73,6 +76,12 @@
 		F0144AE01B8342AD00CBDD84 /* ZXTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTagViewController.m; sourceTree = "<group>"; };
 		F05DC8BE1B89EC5300CDDB9C /* ZXMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMeCell.h; sourceTree = "<group>"; };
 		F05DC8BF1B89EC5300CDDB9C /* ZXMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMeCell.m; sourceTree = "<group>"; };
+		F05DC8C11B8A29A300CDDB9C /* ZXFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFooterView.h; sourceTree = "<group>"; };
+		F05DC8C21B8A29A300CDDB9C /* ZXFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXFooterView.m; sourceTree = "<group>"; };
+		F05DC8C41B8A2E4500CDDB9C /* ZXSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSquare.h; sourceTree = "<group>"; };
+		F05DC8C51B8A2E4500CDDB9C /* ZXSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSquare.m; sourceTree = "<group>"; };
+		F05DC8C71B8A2FC500CDDB9C /* ZXSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSquareButton.h; sourceTree = "<group>"; };
+		F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSquareButton.m; sourceTree = "<group>"; };
 		F0822F091B7F60070090BC97 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0822F0D1B7F60070090BC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0822F0E1B7F60070090BC97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -339,6 +348,8 @@
 		F0822F791B7F66170090BC97 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F05DC8C41B8A2E4500CDDB9C /* ZXSquare.h */,
+				F05DC8C51B8A2E4500CDDB9C /* ZXSquare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,6 +359,10 @@
 			children = (
 				F05DC8BE1B89EC5300CDDB9C /* ZXMeCell.h */,
 				F05DC8BF1B89EC5300CDDB9C /* ZXMeCell.m */,
+				F05DC8C11B8A29A300CDDB9C /* ZXFooterView.h */,
+				F05DC8C21B8A29A300CDDB9C /* ZXFooterView.m */,
+				F05DC8C71B8A2FC500CDDB9C /* ZXSquareButton.h */,
+				F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -563,6 +578,8 @@
 				F0822F8D1B8094E30090BC97 /* ZXEssenceViewController.m in Sources */,
 				F0822F871B7F66DB0090BC97 /* ZXTabBarController.m in Sources */,
 				F0144AD31B8222D200CBDD84 /* ZXTabBar.m in Sources */,
+				F05DC8C31B8A29A300CDDB9C /* ZXFooterView.m in Sources */,
+				F05DC8C61B8A2E4500CDDB9C /* ZXSquare.m in Sources */,
 				F002E08A1B837D2900633248 /* ZXTagCell.m in Sources */,
 				F0144ADE1B83365A00CBDD84 /* ZXSettingViewController.m in Sources */,
 				F05DC8C01B89EC5300CDDB9C /* ZXMeCell.m in Sources */,
@@ -571,6 +588,7 @@
 				F0822F8A1B8094A10090BC97 /* ZXNavigationController.m in Sources */,
 				F09AA8A81B80AE5700F3A7A8 /* ZXFriendTrendsViewController.m in Sources */,
 				F002E0911B83852300633248 /* UIImageView+XMGExtension.m in Sources */,
+				F05DC8C91B8A2FC500CDDB9C /* ZXSquareButton.m in Sources */,
 				F0848B931B8393B100391395 /* ZXLoginRegisterViewController.m in Sources */,
 				F08EDF8D1B88949A0001CC94 /* ZXConst.m in Sources */,
 				F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */,

@@ -15,3 +15,5 @@ UIKIT_EXTERN NSString * const ZXBaseURL;
 /** UITextField占位文字颜色的key（属性名） */
 UIKIT_EXTERN NSString * const ZXTextFieldPlaceholderColor;
 
+/** 间距常量 */
+UIKIT_EXTERN CGFloat const ZXMargin;

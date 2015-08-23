@@ -14,3 +14,6 @@ NSString * const ZXBaseURL = @"http://api.budejie.com/api/api_open.php";
 
 /** UITextField占位文字颜色的key（属性名） */
 NSString * const ZXTextFieldPlaceholderColor = @"placeholderLabel.textColor";
+
+/** 间距常量 */
+CGFloat const ZXMargin = 10;

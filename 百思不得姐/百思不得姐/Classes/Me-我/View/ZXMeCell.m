@@ -10,14 +10,32 @@
 
 @implementation ZXMeCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        self.textLabel.textColor = [UIColor grayColor];
+        self.textLabel.font = [UIFont systemFontOfSize:16];
+    }
+    return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    if (self.imageView.image == nil) return;
+    
+    // 调整图片
+    CGFloat imageWH = self.contentView.height - ZXMargin;
+    self.imageView.width = imageWH;
+    self.imageView.height = imageWH;
+    self.imageView.centerY = self.contentView.height * 0.5;
+    
+    // 调整文字
+    self.textLabel.x = CGRectGetMaxX(self.imageView.frame) + ZXMargin;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    
 }
 
 @end

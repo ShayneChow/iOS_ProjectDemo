@@ -9,6 +9,7 @@
 #import "ZXMeViewController.h"
 #import "ZXSettingViewController.h"
 #import "ZXMeCell.h"
+#import "ZXFooterView.h"
 
 @interface ZXMeViewController ()
 
@@ -47,6 +48,14 @@ static NSString * const ZXMeId = @"me";
     self.tableView.backgroundColor = ZXGlobalBg;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[ZXMeCell class] forCellReuseIdentifier:ZXMeId];
+    self.tableView.contentInset = UIEdgeInsetsMake(ZXMargin - 35, 0, 0, 0);
+    
+    // 设置每一组header和footer的高度
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.sectionFooterHeight = ZXMargin;
+    
+    // 设置底部放置按钮视图
+    self.tableView.tableFooterView = [[ZXFooterView alloc] init];
 }
 
 #pragma mark - UITableViewControllerDataSource

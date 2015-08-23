@@ -17,6 +17,9 @@
 
 #define ZXWeakSelf __weak typeof(self) weakSelf = self
 
+#define ZXScreenW [UIScreen mainScreen].bounds.size.width
+#define ZXScreenH [UIScreen mainScreen].bounds.size.height
+
 #define ZXLogFunc ZXLog(@"%s", __func__)
 
 #define ZXColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
