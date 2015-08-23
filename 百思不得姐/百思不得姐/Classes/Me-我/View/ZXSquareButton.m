@@ -7,6 +7,8 @@
 //
 
 #import "ZXSquareButton.h"
+#import "ZXSquare.h"
+#import <UIButton+WebCache.h>
 
 @implementation ZXSquareButton
 
@@ -19,6 +21,15 @@
         [self setBackgroundImage:[UIImage imageNamed:@"mainCellBackground"] forState:UIControlStateNormal];
     }
     return self;
+}
+
+- (void)setSquare:(ZXSquare *)square
+{
+    _square = square;
+    
+    [self setTitle:square.name forState:UIControlStateNormal];
+    // 下载图片
+    [self sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
 }
 
 - (void)layoutSubviews

@@ -58,18 +58,19 @@
         button.y = (i / totalColCount) * buttonH;
         
         // 设置数据
-        ZXSquare *square = squares[i];
-        [button setTitle:square.name forState:UIControlStateNormal];
-        // 下载图片
-        [button sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
+        button.square = squares[i];
+//        ZXSquare *square = squares[i];
+//        [button setTitle:square.name forState:UIControlStateNormal];
+//        // 下载图片
+//        [button sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
         
         // 设置高度
         self.height = CGRectGetMaxY(button.frame);
     }
 }
 
-- (void)buttonClick:(UIButton *)button {
-    ZXLogFunc;
+- (void)buttonClick:(ZXSquareButton *)button {
+    ZXLog(@"%s %@", __func__, button.square.name);
 }
 
 @end

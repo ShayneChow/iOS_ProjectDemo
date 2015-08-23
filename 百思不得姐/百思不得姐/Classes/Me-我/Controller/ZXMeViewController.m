@@ -29,6 +29,8 @@ static NSString * const ZXMeId = @"me";
 }
 
 - (void)setupNavigtion {
+    // 设置导航栏中间的文字
+    self.navigationItem.title = @"我的";
     // 设置导航栏右边的按钮
     UIBarButtonItem *settingItem = [UIBarButtonItem itemWithTarget:self action:@selector(settingClick) image:@"mine-setting-icon" highImage:@"mine-setting-icon-click"];
     UIBarButtonItem *moonItem = [UIBarButtonItem itemWithTarget:self action:@selector(moonClick) image:@"mine-moon-icon" highImage:@"mine-moon-icon-click"];

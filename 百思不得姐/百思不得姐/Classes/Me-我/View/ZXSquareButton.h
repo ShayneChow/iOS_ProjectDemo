@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ZXSquare;
 
 @interface ZXSquareButton : UIButton
+
+/** 方块 */
+@property (nonatomic, strong) ZXSquare *square;
 
 @end
