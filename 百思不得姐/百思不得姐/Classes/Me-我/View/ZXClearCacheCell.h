@@ -10,4 +10,7 @@
 
 @interface ZXClearCacheCell : UITableViewCell
 
+// 重置cell内容
+- (void)reset;
+
 @end

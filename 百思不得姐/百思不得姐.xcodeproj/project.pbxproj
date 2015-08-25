@@ -23,6 +23,7 @@
 		F05DC8C61B8A2E4500CDDB9C /* ZXSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C51B8A2E4500CDDB9C /* ZXSquare.m */; };
 		F05DC8C91B8A2FC500CDDB9C /* ZXSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */; };
 		F05DC8CC1B8CC81000CDDB9C /* ZXClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8CB1B8CC81000CDDB9C /* ZXClearCacheCell.m */; };
+		F05DC8CF1B8CD0D900CDDB9C /* NSString+ZXFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8CE1B8CD0D900CDDB9C /* NSString+ZXFileSize.m */; };
 		F0822F0F1B7F60070090BC97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F0E1B7F60070090BC97 /* main.m */; };
 		F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0822F191B7F60070090BC97 /* Images.xcassets */; };
 		F0822F291B7F60070090BC97 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F281B7F60070090BC97 /* _____Tests.m */; };
@@ -85,6 +86,8 @@
 		F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSquareButton.m; sourceTree = "<group>"; };
 		F05DC8CA1B8CC81000CDDB9C /* ZXClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXClearCacheCell.h; sourceTree = "<group>"; };
 		F05DC8CB1B8CC81000CDDB9C /* ZXClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXClearCacheCell.m; sourceTree = "<group>"; };
+		F05DC8CD1B8CD0D900CDDB9C /* NSString+ZXFileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXFileSize.h"; sourceTree = "<group>"; };
+		F05DC8CE1B8CD0D900CDDB9C /* NSString+ZXFileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXFileSize.m"; sourceTree = "<group>"; };
 		F0822F091B7F60070090BC97 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0822F0D1B7F60070090BC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0822F0E1B7F60070090BC97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				F0144AD61B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m */,
 				F0144AD71B82295D00CBDD84 /* UIView+XMGExtension.h */,
 				F0144AD81B82295D00CBDD84 /* UIView+XMGExtension.m */,
+				F05DC8CD1B8CD0D900CDDB9C /* NSString+ZXFileSize.h */,
+				F05DC8CE1B8CD0D900CDDB9C /* NSString+ZXFileSize.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -587,6 +592,7 @@
 				F05DC8CC1B8CC81000CDDB9C /* ZXClearCacheCell.m in Sources */,
 				F05DC8C61B8A2E4500CDDB9C /* ZXSquare.m in Sources */,
 				F002E08A1B837D2900633248 /* ZXTagCell.m in Sources */,
+				F05DC8CF1B8CD0D900CDDB9C /* NSString+ZXFileSize.m in Sources */,
 				F0144ADE1B83365A00CBDD84 /* ZXSettingViewController.m in Sources */,
 				F05DC8C01B89EC5300CDDB9C /* ZXMeCell.m in Sources */,
 				F09AA8AB1B80AE7300F3A7A8 /* ZXMeViewController.m in Sources */,

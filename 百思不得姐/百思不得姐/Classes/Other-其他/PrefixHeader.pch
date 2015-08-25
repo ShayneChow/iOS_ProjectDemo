@@ -31,5 +31,6 @@
 #import "UIImage+XMGExtension.h"
 #import "UIImageView+XMGExtension.h"
 #import "ZXConst.h"
+#import "NSString+ZXFileSize.h"
 
 #endif
