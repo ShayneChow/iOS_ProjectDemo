@@ -17,3 +17,6 @@ NSString * const ZXTextFieldPlaceholderColor = @"placeholderLabel.textColor";
 
 /** 间距常量 */
 CGFloat const ZXMargin = 10;
+
+/** Group样式下cell顶部的默认间距 */
+CGFloat const ZXGroupedTableViewTopMargin = 35;

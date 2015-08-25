@@ -22,6 +22,7 @@
 		F05DC8C31B8A29A300CDDB9C /* ZXFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C21B8A29A300CDDB9C /* ZXFooterView.m */; };
 		F05DC8C61B8A2E4500CDDB9C /* ZXSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C51B8A2E4500CDDB9C /* ZXSquare.m */; };
 		F05DC8C91B8A2FC500CDDB9C /* ZXSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */; };
+		F05DC8CC1B8CC81000CDDB9C /* ZXClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8CB1B8CC81000CDDB9C /* ZXClearCacheCell.m */; };
 		F0822F0F1B7F60070090BC97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F0E1B7F60070090BC97 /* main.m */; };
 		F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0822F191B7F60070090BC97 /* Images.xcassets */; };
 		F0822F291B7F60070090BC97 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F281B7F60070090BC97 /* _____Tests.m */; };
@@ -82,6 +83,8 @@
 		F05DC8C51B8A2E4500CDDB9C /* ZXSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSquare.m; sourceTree = "<group>"; };
 		F05DC8C71B8A2FC500CDDB9C /* ZXSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSquareButton.h; sourceTree = "<group>"; };
 		F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSquareButton.m; sourceTree = "<group>"; };
+		F05DC8CA1B8CC81000CDDB9C /* ZXClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXClearCacheCell.h; sourceTree = "<group>"; };
+		F05DC8CB1B8CC81000CDDB9C /* ZXClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXClearCacheCell.m; sourceTree = "<group>"; };
 		F0822F091B7F60070090BC97 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0822F0D1B7F60070090BC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0822F0E1B7F60070090BC97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -363,6 +366,8 @@
 				F05DC8C21B8A29A300CDDB9C /* ZXFooterView.m */,
 				F05DC8C71B8A2FC500CDDB9C /* ZXSquareButton.h */,
 				F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */,
+				F05DC8CA1B8CC81000CDDB9C /* ZXClearCacheCell.h */,
+				F05DC8CB1B8CC81000CDDB9C /* ZXClearCacheCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 				F0822F871B7F66DB0090BC97 /* ZXTabBarController.m in Sources */,
 				F0144AD31B8222D200CBDD84 /* ZXTabBar.m in Sources */,
 				F05DC8C31B8A29A300CDDB9C /* ZXFooterView.m in Sources */,
+				F05DC8CC1B8CC81000CDDB9C /* ZXClearCacheCell.m in Sources */,
 				F05DC8C61B8A2E4500CDDB9C /* ZXSquare.m in Sources */,
 				F002E08A1B837D2900633248 /* ZXTagCell.m in Sources */,
 				F0144ADE1B83365A00CBDD84 /* ZXSettingViewController.m in Sources */,

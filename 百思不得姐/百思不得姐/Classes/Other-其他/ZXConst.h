@@ -17,3 +17,6 @@ UIKIT_EXTERN NSString * const ZXTextFieldPlaceholderColor;
 
 /** 间距常量 */
 UIKIT_EXTERN CGFloat const ZXMargin;
+
+/** Group样式下cell顶部的默认间距 */
+UIKIT_EXTERN CGFloat const ZXGroupedTableViewTopMargin;

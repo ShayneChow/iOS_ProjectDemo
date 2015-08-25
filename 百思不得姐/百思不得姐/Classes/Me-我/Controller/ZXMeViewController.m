@@ -38,7 +38,7 @@ static NSString * const ZXMeId = @"me";
 }
 
 - (void)settingClick {
-    ZXSettingViewController *setting = [[ZXSettingViewController alloc] init];
+    ZXSettingViewController *setting = [[ZXSettingViewController alloc] initWithStyle:UITableViewStyleGrouped];
     [self.navigationController pushViewController:setting animated:YES];
 }
 

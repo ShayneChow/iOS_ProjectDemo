@@ -7,6 +7,7 @@
 //
 
 #import "ZXSettingViewController.h"
+#import "ZXClearCacheCell.h"
 
 @interface ZXSettingViewController ()
 
@@ -18,13 +19,18 @@
     [super viewDidLoad];
     
     self.title = @"设置";
+    self.view.backgroundColor = ZXGlobalBg;
+    self.tableView.contentInset = UIEdgeInsetsMake(ZXMargin - ZXGroupedTableViewTopMargin, 0, 0, 0);
 }
 
 #pragma mark - Table view data source
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 15;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -32,16 +38,17 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = @"测试表单";
+    cell.textLabel.text = @"清除缓存";
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor yellowColor];
-    vc.title = @"测试跳转界面";
-    [self.navigationController pushViewController:vc animated:YES];
+    // 先取消选中状态
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    // 点击后清除缓存
+    
 }
 
 @end
