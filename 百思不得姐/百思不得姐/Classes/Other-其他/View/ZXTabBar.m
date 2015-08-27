@@ -7,6 +7,7 @@
 //
 
 #import "ZXTabBar.h"
+#import "ZXPublishViewController.h"
 
 @interface ZXTabBar()
 
@@ -35,6 +36,8 @@
 - (void)publishClick {
     // 发布按钮点击响应方法
     ZXLog(@"发布新消息，弹出消息发布视图");
+    ZXPublishViewController *publishViewController = [[ZXPublishViewController alloc] init];
+    [self.window.rootViewController presentViewController:publishViewController animated:YES completion:nil];
 }
 
 #pragma mark - layoutSubviews

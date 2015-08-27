@@ -24,6 +24,9 @@
 		F05DC8C91B8A2FC500CDDB9C /* ZXSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8C81B8A2FC500CDDB9C /* ZXSquareButton.m */; };
 		F05DC8CC1B8CC81000CDDB9C /* ZXClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8CB1B8CC81000CDDB9C /* ZXClearCacheCell.m */; };
 		F05DC8CF1B8CD0D900CDDB9C /* NSString+ZXFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8CE1B8CD0D900CDDB9C /* NSString+ZXFileSize.m */; };
+		F05DC8DD1B8F67EF00CDDB9C /* ZXPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8D91B8F67EF00CDDB9C /* ZXPublishViewController.m */; };
+		F05DC8DE1B8F67EF00CDDB9C /* ZXPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F05DC8DA1B8F67EF00CDDB9C /* ZXPublishViewController.xib */; };
+		F05DC8E11B8F6BE000CDDB9C /* ZXPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F05DC8E01B8F6BE000CDDB9C /* ZXPublishButton.m */; };
 		F0822F0F1B7F60070090BC97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F0E1B7F60070090BC97 /* main.m */; };
 		F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0822F191B7F60070090BC97 /* Images.xcassets */; };
 		F0822F291B7F60070090BC97 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0822F281B7F60070090BC97 /* _____Tests.m */; };
@@ -88,6 +91,11 @@
 		F05DC8CB1B8CC81000CDDB9C /* ZXClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXClearCacheCell.m; sourceTree = "<group>"; };
 		F05DC8CD1B8CD0D900CDDB9C /* NSString+ZXFileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXFileSize.h"; sourceTree = "<group>"; };
 		F05DC8CE1B8CD0D900CDDB9C /* NSString+ZXFileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXFileSize.m"; sourceTree = "<group>"; };
+		F05DC8D81B8F67EF00CDDB9C /* ZXPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPublishViewController.h; sourceTree = "<group>"; };
+		F05DC8D91B8F67EF00CDDB9C /* ZXPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPublishViewController.m; sourceTree = "<group>"; };
+		F05DC8DA1B8F67EF00CDDB9C /* ZXPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXPublishViewController.xib; sourceTree = "<group>"; };
+		F05DC8DF1B8F6BE000CDDB9C /* ZXPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPublishButton.h; sourceTree = "<group>"; };
+		F05DC8E01B8F6BE000CDDB9C /* ZXPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPublishButton.m; sourceTree = "<group>"; };
 		F0822F091B7F60070090BC97 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0822F0D1B7F60070090BC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0822F0E1B7F60070090BC97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -183,6 +191,42 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		F05DC8D61B8F67EF00CDDB9C /* Publish-发布 */ = {
+			isa = PBXGroup;
+			children = (
+				F05DC8D71B8F67EF00CDDB9C /* Controller */,
+				F05DC8DB1B8F67EF00CDDB9C /* Model */,
+				F05DC8DC1B8F67EF00CDDB9C /* View */,
+			);
+			path = "Publish-发布";
+			sourceTree = "<group>";
+		};
+		F05DC8D71B8F67EF00CDDB9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F05DC8D81B8F67EF00CDDB9C /* ZXPublishViewController.h */,
+				F05DC8D91B8F67EF00CDDB9C /* ZXPublishViewController.m */,
+				F05DC8DA1B8F67EF00CDDB9C /* ZXPublishViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F05DC8DB1B8F67EF00CDDB9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F05DC8DC1B8F67EF00CDDB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F05DC8DF1B8F6BE000CDDB9C /* ZXPublishButton.h */,
+				F05DC8E01B8F6BE000CDDB9C /* ZXPublishButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F0822F001B7F60070090BC97 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +286,7 @@
 		F0822F6E1B7F66170090BC97 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F05DC8D61B8F67EF00CDDB9C /* Publish-发布 */,
 				F0822F6F1B7F66170090BC97 /* Essence-精华 */,
 				F0822F7B1B7F66170090BC97 /* New-新帖 */,
 				F0822F731B7F66170090BC97 /* FriendTrends-关注 */,
@@ -529,6 +574,7 @@
 			files = (
 				F0848B941B8393B100391395 /* ZXLoginRegisterViewController.xib in Resources */,
 				F0848B8F1B8391F600391395 /* ZXFriendTrendsViewController.xib in Resources */,
+				F05DC8DE1B8F67EF00CDDB9C /* ZXPublishViewController.xib in Resources */,
 				F002E08B1B837D2900633248 /* ZXTagCell.xib in Resources */,
 				F0822F1A1B7F60070090BC97 /* Images.xcassets in Resources */,
 			);
@@ -593,6 +639,7 @@
 				F05DC8C61B8A2E4500CDDB9C /* ZXSquare.m in Sources */,
 				F002E08A1B837D2900633248 /* ZXTagCell.m in Sources */,
 				F05DC8CF1B8CD0D900CDDB9C /* NSString+ZXFileSize.m in Sources */,
+				F05DC8DD1B8F67EF00CDDB9C /* ZXPublishViewController.m in Sources */,
 				F0144ADE1B83365A00CBDD84 /* ZXSettingViewController.m in Sources */,
 				F05DC8C01B89EC5300CDDB9C /* ZXMeCell.m in Sources */,
 				F09AA8AB1B80AE7300F3A7A8 /* ZXMeViewController.m in Sources */,
@@ -602,6 +649,7 @@
 				F002E0911B83852300633248 /* UIImageView+XMGExtension.m in Sources */,
 				F05DC8C91B8A2FC500CDDB9C /* ZXSquareButton.m in Sources */,
 				F0848B931B8393B100391395 /* ZXLoginRegisterViewController.m in Sources */,
+				F05DC8E11B8F6BE000CDDB9C /* ZXPublishButton.m in Sources */,
 				F08EDF8D1B88949A0001CC94 /* ZXConst.m in Sources */,
 				F09AA8A51B80AC5700F3A7A8 /* ZXNewViewController.m in Sources */,
 				F0144AD91B82295D00CBDD84 /* UIBarButtonItem+XMGExtension.m in Sources */,
